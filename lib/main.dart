@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:fl_componentes/screen/screen.dart';
 
-
+//Archivo principal en donde se importan las demas clases
 
 
 void main() => runApp(const MyApp());

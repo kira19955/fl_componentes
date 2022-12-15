@@ -1,7 +1,8 @@
+//import 'package:fl_componentes/screen/screen.dart';
 import 'package:flutter/material.dart';
 
-import 'package:fl_componentes/screen/screen.dart';
 
+import 'package:fl_componentes/router/app_router.dart';
 //Archivo principal en donde se importan las demas clases
 
 
@@ -16,14 +17,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       //home:const ListView2Screen(),
-      initialRoute: 'Home',
-      routes: {
+      initialRoute: AppRouters.initialRouter,
+      routes: AppRouters.getAppRoters(),
+      /* routes: {
         'Home':(BuildContext context) => const HomeScreen(),
         'ListView1':(BuildContext context) => const ListView1Screen(),
         'ListView2':(BuildContext context) => const ListView2Screen(),
         'Card':(BuildContext context) => const cardScreen(),
         'Alert':(BuildContext context) => const alertScreen(),
-      },
+      }, */
     );
   }
 }

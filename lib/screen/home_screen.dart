@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
         title: const Text("Componentes de Flutter"),
-        elevation: 0,
+        //elevation: 0,
       ),
 
       /*se crea un listview para mostrar los archivos en lista

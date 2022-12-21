@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 
 import 'package:fl_componentes/router/app_router.dart';
+import 'package:fl_componentes/theme/app_theme.dart';
+
 //Archivo principal en donde se importan las demas clases
 
 
@@ -19,6 +21,18 @@ class MyApp extends StatelessWidget {
       //home:const ListView2Screen(),
       initialRoute: AppRouters.initialRouter,
       routes: AppRouters.getAppRoters(),
+      theme: AppTheam.lightTheme,
+      //theme:
+       /* ThemeData.dark().copyWith(
+      //Color Primario
+        primaryColor: Colors.indigo,
+
+        //appbar theme
+        appBarTheme:const AppBarTheme(
+          color: Colors.indigo,
+          elevation: 0,
+        )
+      ),  */
       /* routes: {
         'Home':(BuildContext context) => const HomeScreen(),
         'ListView1':(BuildContext context) => const ListView1Screen(),
